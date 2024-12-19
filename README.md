@@ -1,35 +1,32 @@
-# events-app
+# Product Showcase - Vue + TypeScript
 
-This template should help get you started developing with Vue 3 in Vite.
+Questo progetto è stato creato come parte del mio percorso di apprendimento di TypeScript in combinazione con Vue.js. L'obiettivo principale è stato quello di sviluppare una piccola applicazione per visualizzare e presentare i dettagli di un prodotto, utilizzando Vue 3 e TypeScript per comprendere meglio le funzionalità offerte da TypeScript in un ambiente di sviluppo moderno.
 
-## Recommended IDE Setup
+## Tecnologie utilizzate
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Vue 3**: Framework JavaScript per la creazione di interfacce utente reattive.
+- **TypeScript**: Superset di JavaScript che aggiunge la tipizzazione statica per migliorare la qualità del codice e la manutenibilità.
+- **SCSS**: Estensione di CSS che facilita la gestione di stili complessi.
 
-## Customize configuration
+## Funzionalità
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+1. **Visualizzazione dei Prodotti**:
+   - La pagina mostra una card con i dettagli di un prodotto, tra cui immagine, titolo, categoria, valutazione e prezzo.
+2. **Gestione dei Dati**:
 
-## Project Setup
+   - I dati del prodotto vengono recuperati tramite una chiamata API (simulata dal servizio `ProductService`), utilizzando il metodo `getProductDetails`.
 
-```sh
-npm install
-```
+3. **Componentizzazione**:
 
-### Compile and Hot-Reload for Development
+   - Il progetto utilizza componenti Vue modulari: una card prodotto (`ProductCard`) e una pagina che mostra il prodotto selezionato.
 
-```sh
-npm run dev
-```
+4. **Gestione del Ciclo di Vita**:
 
-### Compile and Minify for Production
+   - Viene utilizzato `onMounted` per recuperare i dati del prodotto una volta che il componente è stato montato sulla pagina.
 
-```sh
-npm run build
-```
+5. **Error Handling**:
 
-### Lint with [ESLint](https://eslint.org/)
+   - Viene gestito un errore di rete con un semplice log nel caso di fallimento della chiamata API.
 
-```sh
-npm run lint
-```
+6. **Tipizzazione con TypeScript**:
+   - L'intero progetto è stato sviluppato utilizzando TypeScript per imparare come dichiarare e gestire tipi di dati, sia per le risposte dell'API che per gli oggetti in Vue.
